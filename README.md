@@ -1,52 +1,80 @@
-# FTP Server Configuration
+# FTP Server Configuration on Linux
 
-## Project Date
-2025
+## 📌 Project Overview
 
-## Project Overview
+This project demonstrates how to configure an **FTP (File Transfer Protocol) server on Linux** for transferring files between a client and server.
 
-This project demonstrates the configuration of an FTP master server
-using Linux.
+The project covers basic FTP server installation, configuration, user access, permissions, service management, and testing.
 
-The FTP master server stores files in a shared location. Client
-servers can connect to the FTP server and access the required files.
+## 🏗️ Project Architecture
 
-## Technologies Used
+```text id="r9c7kp"
+FTP Client
+    |
+    | FTP Connection
+    v
+Linux FTP Server
+    |
+    +---- User Authentication
+    |
+    +---- File Permissions
+    |
+    +---- FTP Service
+    |
+    v
+FTP Storage Directory
+```
+
+## 🐧 Technologies Used
 
 - Linux
 - FTP
-- Shell Scripting
-- Networking
+- FTP Server
+- Shell Commands
+- File Permissions
+- System Services
+- Git & GitHub
 
-## Project Objectives
+## ⚙️ Configuration Steps
 
-- Configure an FTP server
-- Create and manage FTP users
-- Configure file permissions
-- Allow client systems to connect to the FTP server
-- Upload and download files
-- Manage access to shared data
+1. Install an FTP server package on Linux.
+2. Configure the FTP server settings.
+3. Create and configure FTP users.
+4. Set appropriate file and directory permissions.
+5. Start and enable the FTP service.
+6. Configure firewall rules if required.
+7. Connect to the FTP server from a client.
+8. Test file upload and download operations.
 
-## Basic Workflow
+## 🔐 Security
 
-FTP Client
-    |
-    v
-FTP Master Server
-    |
-    v
-Shared File Location
+Basic security considerations include:
 
-Clients can upload and download files through the FTP server.
+- User authentication
+- File and directory permissions
+- Controlled access to FTP directories
+- Firewall configuration
+- Service management
 
-## What I Learned
+> **Note:** For production environments, secure file-transfer protocols such as SFTP or FTPS should generally be considered instead of unencrypted FTP.
 
+## 🎯 What I Learned
+
+- Linux server administration basics
 - FTP server configuration
 - Linux user management
-- Linux file permissions
-- Basic network configuration
-- File transfer between systems
+- File and directory permissions
+- Linux service management
+- Basic firewall concepts
+- Troubleshooting server connectivity
+- Documenting Linux projects using GitHub
 
-## Project Type
+## 📂 Project Type
 
-Resume Project / Learning Project
+**Linux / Server Administration / FTP / DevOps**
+
+## 👨‍💻 Author
+
+**Shailesh Bidave**
+
+GitHub: [@bidaveeshailesh](https://github.com/bidaveeshailesh)
